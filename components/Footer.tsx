@@ -160,7 +160,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold tracking-tight text-black">
               Social
             </h3>
-            <ul className="flex items-center gap-3">
+            <ul className="flex flex-wrap items-center gap-2.5">
               {SOCIALS.map(({ label, href, Icon }) => (
                 <li key={label}>
                   <motion.a

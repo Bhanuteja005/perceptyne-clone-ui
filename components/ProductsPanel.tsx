@@ -25,7 +25,7 @@ export function ProductsPanel({ open }: { open: boolean }) {
             transition={{ duration: 0.35, ease: EASE }}
           >
             <div className="rounded-2xl border border-white/10 bg-[#1b1b1d]/95 p-3 shadow-2xl shadow-black/50 backdrop-blur">
-              <ul className="flex justify-center gap-2.5 overflow-x-auto pb-1">
+              <ul className="flex justify-start gap-2.5 overflow-x-auto pb-1 sm:justify-center">
                 {PRODUCTS.map((p, i) => (
                   <motion.li
                     key={p.name}
