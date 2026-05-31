@@ -69,7 +69,7 @@ export function BottomNav() {
         <motion.div
           layout
           transition={{ layout: { duration: 0.45, ease: EASE } }}
-          className="flex items-center gap-1 rounded-lg border border-white/10 bg-[#1b1b1d]/95 p-1.5 shadow-2xl shadow-black/40 backdrop-blur"
+          className="flex items-center gap-0.5 rounded-lg border border-white/10 bg-[#1b1b1d]/95 p-1 shadow-2xl shadow-black/40 backdrop-blur sm:gap-1 sm:p-1.5"
         >
           <AnimatePresence initial={false} mode="popLayout">
             {open ? (
@@ -94,7 +94,7 @@ export function BottomNav() {
                 );
 
                 const className = cn(
-                  "flex items-center gap-1 rounded-md px-4 py-2 text-[11px] font-semibold tracking-wide transition-colors sm:px-5",
+                  "flex items-center gap-1 rounded-md px-2.5 py-1.5 text-[10px] font-semibold tracking-wide transition-colors sm:px-5 sm:py-2 sm:text-[11px]",
                   isActive
                     ? "bg-white text-black"
                     : "text-white/70 hover:text-white"
@@ -140,9 +140,9 @@ export function BottomNav() {
                 transition={{ duration: 0.2 }}
                 onClick={() => setManualOpen(true)}
                 aria-label="Open menu"
-                className="flex items-center gap-2 px-4 py-2 text-[11px] font-semibold tracking-[0.2em] text-white/80 transition-colors hover:text-white sm:px-5"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] text-white/80 transition-colors hover:text-white sm:gap-2 sm:px-5 sm:py-2 sm:text-[11px]"
               >
-                <Plus className="h-4 w-4" />
+                <Plus className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 MENU
               </motion.button>
             )}
